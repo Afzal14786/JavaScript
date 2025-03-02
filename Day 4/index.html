@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function In JS</title>
+</head>
+<body>
+    <h1><u>Functions & Methods</u></h1>
+    <p>Function -> Block of code that performs a spcific task & can be invoked whenever needed. </p>
+
+    <h1>Assignment</h1>    
+    <h1>Q1. Write a JavaScript function that returns array elements larger than a number.</h1>
+
+    <h2>Solution : </h2>
+   <pre>
+    <code>
+        let arr = [2,5,8,10,100,5,15];
+
+    function largerNumber(arr) {
+        let large = arr[0];
+        for (let i = 1; i &lt arr.length; ++i) {
+            if (large &lt arr[i]) {
+                large = arr[i];
+            }
+        }
+        return large;
+    }
+
+    console.log(`Largest Number in The Given Array Is : ${largerNumber(arr)}`);
+    </code>
+   </pre>
+
+   <h2>Q2. Write a JavaScript function to extract unique characters from a string .
+    Example : str = "abcdabcdefgggh", ans = “abcdefgh”;</h2>
+
+    <h2>Solution : </h2>
+    <pre>
+        <code>
+    let str = "abcdabcdefgggh";
+
+    function unique(str) {
+        let ans = "";
+        for (let i = 0; i &lt str.length; ++i) {
+            let currChar = str[i];
+            if (ans.indexOf(currChar) == -1) {
+                ans += currChar;
+            }
+        }
+
+        return ans;
+    }
+
+    console.log(unique(str));
+        </code>
+    </pre>
+
+    <h2>Q3 Write a JavaScript function that accepts a list of country names as input and returns the longest country name as output .
+        Example : country = ["Australia","Germany","United State Of America"];
+        Output : United State Of America
+    </h2>
+
+    <h2>Solution : </h2>
+    <pre>
+        <code>
+            let country = ["Australia","Germany","United State Of America"];
+
+        function lengthCountry(country) {
+            let idx = 0;
+            let currCtr = country[idx].length;
+            for (let i = 1; i &lt country.length; ++i) {
+                if (country[i].length > currCtr) {
+                    currCtr = country[i];
+                    idx = i;
+                }
+            }
+
+            return country[idx];
+        }
+
+        console.log(`Longest country name is : ${lengthCountry(country)}`);
+        </code>
+    </pre>
+
+    <h2>Q4. Write a JavaScript function to count the number of vowels in a String argument.</h2>
+    <h2>Solution : </h2>
+    <pre>
+        <code>
+            let str = "apnacollage";
+
+        function vowels(str) {
+            let count = 0;
+            for (let i = 0; i &lt str.length; ++i) {
+                if (str[i] == 'a' ||
+                    str[i] == 'e' ||
+                    str[i] == 'i' ||
+                    str[i] == 'o' ||
+                    str[i] == 'u'
+                ) {
+                    count++;
+                }
+            }
+
+            return count;
+        }
+
+        console.log(`Sentence ${str} contains : ${vowels(str)} vowels`);
+        </code>
+    </pre>
+
+
+    <h2>Write a JavaScript function to generate a random number with in a range .(start,end);</h2>
+    <h2>Solution : </h2>
+    <pre>
+        <code>
+            let start = 100;
+            let end = 200;
+
+            function randNumber(start, end) {
+                let diff = end-start;
+                let rand = Math.floor(Math.random() * diff) + 1;
+
+                return rand;
+            }
+
+            console.log(`Random number in between ${start} & ${end} is : ${randNumber(start,end)}`);
+        </code>
+    </pre>
+    <script src="function.js"></script>
+</body>
+</html>
