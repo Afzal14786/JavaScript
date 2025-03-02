@@ -49,15 +49,47 @@ It helps to collaborate .
 
 # 10. git checkout <- branch name ->
     used to navigate into branch
-    syntax : _git checkout master_
+    syntax : git checkout master
 
 # 11. git checkout -b <- new branch name>
     used to create new branch 
-    syntax : _git checkout -b bugfix_
+    syntax : git checkout -b bugfix
 
 # 12. git branch -d <- branch name->
     used to delete branch
-    syntax : _git branch -d bugfix_
+    syntax : git branch -d bugfix
+# For Mearging Code Generally we use below two commands otherwise we create a pull request (PR).
 
+# 13. git diff <- branch name ->
+    used to compare commits, branches, files and more
+    syntax : git diff <branch name>
 
+# 14. git merge <- branch name ->
+    used to merge 2 branches
 
+# Or Create a PR (Pull Request)
+    It let you tell others about changes you've pushed to a branch in a repository on Github .
+
+# git pull origin main :-
+    this command is used to fetch and download content from a remote repo and immediatey uodate the local repo to match that content .
+
+# Merge Conflicts
+    An event that takes place when git is unable to automatically resolve difference in code between two commits .
+
+# 15. Staged changes :-
+    used to reset the staged changes 
+    syntax : 
+        a. git reset <-file name->
+        b. git reset
+
+# 16. Commit Changes :-
+    If we want to change the unwanted commits then we use below commands
+    syntax :
+        a. git reset HEAD~1  // for one commit
+        b. git reset <commit hash>
+        c. git reset --hard <-commit hash>  // it is used to changes the unwanted commid as well as deleted the changes .
+
+# Forking :-
+    Fork is a new repository that share code and visibility setting with the orignal "Upstream Repository".
+
+    * Fork is a rougf copy.
