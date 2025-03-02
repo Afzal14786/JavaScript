@@ -58,7 +58,8 @@ It helps to collaborate .
 # 12. git branch -d <- branch name->
     used to delete branch
     syntax : git branch -d bugfix
-# For Mearging Code Generally we use below two commands otherwise we create a pull request (PR).
+
+For Mearging Code Generally we use below two commands otherwise we create a pull request (PR).
 
 # 13. git diff <- branch name ->
     used to compare commits, branches, files and more
