@@ -47,7 +47,17 @@ It helps to collaborate .
         a. *git push -u origin main*   // first time
         b. *git push*  // use all the time 
 
+# 10. git checkout <- branch name ->
+    used to navigate into branch
+    syntax : _git checkout master_
 
+# 11. git checkout -b <- new branch name>
+    used to create new branch 
+    syntax : _git checkout -b bugfix_
+
+# 12. git branch -d <- branch name->
+    used to delete branch
+    syntax : _git branch -d bugfix_
 
 
 
